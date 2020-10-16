@@ -1,0 +1,88 @@
+.optimafont{
+	font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+h1{
+	font-size: 40px;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+h2{
+	font-size: 30px;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+.kiri{
+	float: left;
+	width: 46%;
+	text-align: justify;
+	margin-left: 20px;
+}
+
+.kanan{
+	float: right;
+	width: 46%;
+	text-align: justify;
+	margin-right: 20px;
+}
+
+.tengah{
+	float: left;
+	margin-left: 20px;
+}
+
+.tengah2{
+	float: left;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: center;
+}
+
+.tambahmarginleft{
+	margin-left: 400px;
+}
+
+table{
+	margin-left: 20px;
+}
+
+td{
+	padding: 5px;
+}
+
+li{
+	margin-left: -20px;
+}
+
+a{
+	text-decoration: none;
+	color: green;
+}
+
+@media(max-width:340px){
+	.kiri{
+		float: right;
+		width: 100%;
+	}
+	.kanan{
+		float: none;
+		width: 100%;
+	}
+	br{
+		margin-bottom: 5px;
+	}
+	.tengah{
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+	table{
+		font-size: 14px;
+		width: 100%;
+		margin-left: -5px;
+	}
+	.tengah2{
+		margin-left: 0;
+		width: 100%;
+	}
+}
