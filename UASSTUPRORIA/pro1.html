@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pro1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <div id="navbar">
+        <img src="navlogo.png" alt="">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="getinvolved.html">GET INVOLVED</a>
+        <a href="#">EVENTS</a>
+        <a href="#">MATERIALS</a>
+        <a href="#">FILM FESTIVAL</a>
+        <a href="#">MESSAGES</a>
+        <a href="#">MEDIA</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <img src="./Hamburger_icon.svg.png" alt="" srcset="" width="5%">
+        </a>
+    </div>
+    <div id="slider"></div>
+</header>
+<body>
+    <div class="body">
+        <div class="content index">
+            <img src="UN-SG-image.jpg" alt="" style="width:100%;">
+            <br>
+            <br>
+            <div style="font-size: 200%; text-align: center; color: #d3deeb;">ANTÓNIO GUTERRES SECRETARY</div>
+            <div style="font-size: 200%; text-align: center; color: #d3deeb;">GENERAL UNITED NATIONS</div>
+            <div style="font-size: 150%; text-align: left; color: #dce2e8; margin-left: 20%; margin-right: 20%;"><p>Humanity is an inextricable part of the rich tapestry of life that makes up our world’s biological diversity. All human civilizations have been and continue to be built on the use of wild and cultivated species of flora and fauna, from the food we eat to the air we breathe.
+                <br><br>
+                However, it seems that humanity has forgotten just how much we need nature for our survival and well-being. As our population and our needs continue to grow, we keep exploiting natural resources - including wild plants and animals and their habitats - in an unsustainable manner.
+                <br><br>
+                In its 2019 Global Assessment, the Intergovernmental Panel for Biodiversity and Ecosystem Services (IPBES) highlighted how the current global rate of species extinction is rampant and accelerating - tens to hundreds of times higher than before humans inhabited the planet. 
+                <br><br>
+                By overexploiting wildlife, habitats and ecosystems, humanity is endangering both itself and the survival of countless species of wild plants and animals. Today, close to a quarter of all species on the planet are in danger of becoming extinct in the next decades.
+                <br><br>
+                On this World Wildlife Day, let us remind ourselves of our duty to preserve and sustainably use the vast variety of life on the planet. Let us push for a more caring, thoughtful and sustainable relationship with nature. A world of thriving biodiversity provides the foundation we need to achieve our Sustainable Development Goals of a world of dignity and opportunity for all people on a healthy planet.</p></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr style="margin:10%;">
+            <br>
+            <br>
+            <div style="font-size: 160%; text-align: center; color: #d3deeb;">This site is managed by the CITES Secretariat |</div>
+            <div style="font-size: 160%; text-align: center; color: #d3deeb;">Designed by Ria Melati | riamelaati@gmail.com</div>
+            <br>
+            <br>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    function scrollIn() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("slider").style.width = scrolled + "%";
+    }
+    function hamburger(){
+        var x = document.getElementById("navbar");
+        if(x.className.endsWith(" hamb")){
+            x.className = x.className.substring(0, x.className.length - 5);
+        }else{
+            x.className += " hamb";
+        }
+    }
+    window.onscroll = function(){
+        scrollIn();
+    };
+</script>
+</html>
